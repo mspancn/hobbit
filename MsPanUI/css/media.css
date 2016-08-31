@@ -4,6 +4,8 @@
     RESPONSIVE STYLES
 
 	List @media:
+	    - (min-width: 992px) -
+
 	    - (min-width: 480px) and (max-width: 991px) -
 
 	    - (max-width: 992px) -
@@ -20,7 +22,18 @@
 
    - - - - - - - - - - - - - - - - - - - - - - - - - - -
 */
-
+/* 
+	- (min-width: 992px) -
+*/
+@media (min-width: 992px) {
+	.navbar-collapse ul li > a {font-size:15px;}
+	#indexAbout {margin-left: 15%; margin-right: 15%;}
+	/*#skills p {font-size: 20px;}*/
+	#skills .progressbar-title-inner{font-size: 15px;}
+	.adaptBig {font-size: 18px; line-height: 30px}
+	.adaptMid {font-size: 15px;}
+	#footer .wechatBarCode {height:150px; width: 150px}
+}
 /* 
 	- (min-width: 480px) and (max-width: 991px) -
 */

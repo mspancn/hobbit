@@ -1,4 +1,4 @@
-/* Table of Contents
+ /* Table of Contents
    - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     RESPONSIVE STYLES
@@ -214,6 +214,29 @@ a.all-posts:hover {color:#000;}
 .button3.middle {padding:10px 12px 10px 12px;} 
 .button4.middle, .button5.middle, .button6.middle {padding:10px 12px 10px 12px;}
 .button7.smaller, .button8.smaller {padding:9px 10px 9px 10px;}
+
+
+.btn-primary{color:#fff;background-color:#fed136;border-color:#fed136}
+.btn-primary.active,.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#fec503;border-color:#f6bf01}
+.btn-primary.disabled,
+.btn-primary.disabled.active,
+.btn-primary.disabled:active,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled],
+.btn-primary[disabled].active,
+.btn-primary[disabled]:active,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,fieldset[disabled] 
+.btn-primary,fieldset[disabled] 
+.btn-primary.active,fieldset[disabled] 
+.btn-primary:active,fieldset[disabled] 
+.btn-primary:focus,fieldset[disabled] 
+.btn-primary:hover{background-color:#fed136;border-color:#fed136}
+.btn-primary .badge{color:#fed136;background-color:#fff}
+
 /*end of BUTTONS*/
 
 /* -- toTop -- */
@@ -475,7 +498,8 @@ header.alt .navbar-header {border-color:#fff;}
 header.alt .navbar-header:hover, header.alt .navbar-header.selected {background:#fff; color:#000;}
 header.alt .navbar-header:hover .navbar-brand, header.alt .navbar-header.selected .navbar-brand {color:#000;}
 header.alt .navbar-header:hover .navbar-toggle .icon-bar, header.alt .navbar-header.selected .icon-bar {background-color: #000000;}
-a.navbar-brand {font-size:11px; text-transform:uppercase; padding:0 0 0 27px; letter-spacing: -0.07em; display:block;}
+/*a.navbar-brand {font-size:11px; text-transform:uppercase; padding:0 0 0 27px; letter-spacing: -0.07em; display:block;}*/
+a.navbar-brand {font-size:15px; text-transform:uppercase; padding:0 0 0 27px; letter-spacing: -0.07em; display:block;}
 .navbar-default .navbar-toggle {margin:0;  padding:0; float:left; position: absolute; left: 11px; top: 10px;outline:0}
 
 
@@ -819,7 +843,7 @@ a.arrow-bottom:hover b {color:#fff;}
 .isotope-bg {background-color:#F6F6F6;}
 .portfolio .portfolios_listing {margin:0; float:left;}
 
-.full article {max-width: 25%;}
+.full article {max-width: 20%;}
 .portfolios_listing h2 {
     font-size: 18px;
     font-weight: normal;
@@ -1408,3 +1432,20 @@ section#footer {bottom:0;position:fixed;z-index:0;width:100%;}
 .no-js #footer {position:relative;}
 .no-js .google-map {display:none;}
 .no-js .fullscreen .container {padding:150px 0}
+
+
+
+
+/*customize*/
+section#final {background-color:#c2a47d;background-image:url(../img/map-image.png);background-position:center;background-repeat:no-repeat}
+.copyright-block a:hover {color:#c2a47d;}
+.copyright-block a {font-size:15px; color:white;}
+#footer .wechatBarCode {height:100px; width: 100px;}
+
+
+/*section#final .section-heading{color:#fff; margin: 30px}
+section#final ::-webkit-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#eee}
+section#final :-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#eee}
+section#final ::-moz-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#eee}
+section#final :-ms-input-placeholder{font-family:Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;font-weight:700;color:#eee}
+section#final .text-danger{color:#e74c3c}
