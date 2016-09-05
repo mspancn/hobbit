@@ -46,7 +46,8 @@
 	sitePath.pop();
 	sitePath = sitePath.join('/');
 	if (fileprotocol) {
-		sitePath = 'http://family.olegnax.com'; //if somebody load html via file protocol
+		//sitePath = 'http://family.olegnax.com'; //if somebody load html via file protocol
+		sitePath = 'http://mspan.herokuapp.com';
 	}
 
 
