@@ -20,7 +20,9 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">	
 
 		<script type="text/javascript" src='js/modernizr.min.js'></script>	
+		<script type="text/javascript">$(document).ready(function(){$("#portfolioModal1").modal('show');});</script>
 	</head>		
+
 	<body>
 		<div class="loader" style="background-color:black">
 		     <div class="bar" style="text-transform:capitalize;"><strong style="color:#fed136;">MsPan</strong><span class="progress"><span>loading...</span></span></div></div>
@@ -368,7 +370,7 @@
 		</section>
 
 		<!--Portfolio section 2 -->
-		<section class="waypoint"  data-hash="portfolio2">
+		<section class="waypoint" id="portfolio2" data-hash="portfolio2">
 			<!--Simple text block-->
 			<div id="create">
 				<div class="spacer" style="height:92px;"></div>
@@ -394,11 +396,53 @@
 				<div class="spacer" style="height:60px;"></div>
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.2"><img src="img/dinning.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/></div>
+					    <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
+		                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+		                        <div class="portfolio-hover">
+		                            <div class="portfolio-hover-content">
+		                                <i class="fa fa-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/dinning.jpg" class="img-responsive" alt="">
+		                    </a>
+		                    <div class="portfolio-caption"><h4>北美吃货</h4></div>
+	                    </div>
+		                <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
+		                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+		                        <div class="portfolio-hover">
+		                            <div class="portfolio-hover-content">
+		                                <i class="fa fa-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/nycmap1.jpg" class="img-responsive" alt="">
+		                    </a>
+		                    <div class="portfolio-caption"><h4>玩转美国</h4></div>
+		                </div>
+
+		                <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
+		                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+		                        <div class="portfolio-hover">
+		                            <div class="portfolio-hover-content">
+		                                <i class="fa fa-plus fa-3x"></i>
+		                            </div>
+		                        </div>
+		                        <img src="img/university.jpg" class="img-responsive" alt="">
+		                    </a>
+		                    <div class="portfolio-caption"><h4>美国校园</h4></div>
+		                </div>
+	                        
+
+<!-- 						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.2"><img src="img/dinning.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/>
+                            <span>
+				    			<a href="#">Mike Chen</a>
+	       						<span class="post">CEO</span>
+							</span>
+						</div>
 						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.4"><img src="img/nycmap1.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/></div>
 						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.6"><img src="img/university.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/>
-						</div>
-						<!-- <div class="col-sm-4" data-animation="fadeInScale " data-delay="0.4"><img src="http://placehold.it/324x247" alt="" class="img-responsive" /></div> -->
+						</div> -->
+
+
 						<div class="tAc">
 							<h3 class="content-title-area black-decor" data-animation="fadeIn slow" data-delay="0.2" style="margin-top:30px">
 							    <a href="#">了解更多</a></h3>
@@ -452,7 +496,7 @@
 								<div class="flip-container" data-animation="flipInY slow" data-delay="0.4">
 									<div class="flipper">
 										<div class="front">
-											<img src="img/xue.jpg" class="img-responsive" alt="" />
+											<img src="img/xue5.jpg" class="img-responsive" alt="" />
 											<span class="author-flip">
 												<a href="#">Ms. Pan</a>
 												<span class="post">Chief Product Designer</span>
@@ -478,7 +522,7 @@
 								<div class="flip-container" data-animation="flipInY slow" data-delay="0.4">
 									<div class="flipper">
 										<div class="front">
-											<img src="img/xin2.jpg" class="img-responsive" alt="" />
+											<img src="img/xin5.jpg" class="img-responsive" alt="" />
 											<span class="author-flip">
 												<a href="#">Mike Chen</a>
 												<span class="post">CEO</span>
@@ -500,16 +544,16 @@
 								<div class="flip-container" data-animation="flipInY slow" data-delay="0.4">
 									<div class="flipper">
 										<div class="front">
-											<img src="img/xin.jpg" class="img-responsive" alt="" />
+											<img src="img/bo2.jpg" class="img-responsive" alt="" />
 											<span class="author-flip">
-												<a href="#">Thomas Green</a>
-												<span class="post">Consiglieri</span>
+												<a href="#">Bo Liang</a>
+												<span class="post">CTO</span>
 											</span>
 										</div>
 										<div class="back"><div class="wrapper-tb"><div class="cell-2">
 													<div class="for-mobile-flip">
-														<h4>Thomas Green</h4>
-														<span class="post">Consiglieri</span>
+														<h4>Bo Liang</h4>
+														<span class="post">CTO</span>
 														<p class="flip-text">
 															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nulla erat, eget fringilla eros. Donec suscipit dui felis. Nulla facilisi. fringilla ultrices sit amet nec leo.
 														</p>
@@ -683,29 +727,144 @@
 			</div>
 		</section>
 
+        
+						    <!-- Portfolio Modal 1 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>北美吃货Package</h2>
+                                <p class="item-intro text-muted">本系列为你提供“提高口语的唯一途径”——高效有趣的沉浸式反复操练。</p>
+                                <div class="list-group">
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程介绍</h5>
+                                    <p class="list-group-item-text, text-left">Ms. Pan自主研发科学系统的Content-based课程体系，由浅入深，循序渐进，让你在外教的帮助和鼓励下反复演练。这个课程系列中，每节课你将学到跟主题相关的新鲜内容，你也将有充分的机会运用和演练你的口语。</p>
+                                    <p class="list-group-item-text, text-left">外教的工作不是在你说错的时候不停地打断你，纠正你。 他会像朋友一样耐心的鼓励你，启发你，倾听你，回应你，从而使你对自己的口语越来越自信，可以做到脱口而出，轻松愉快地跟native-speaker交流。希望你能从基础表达到地道交流再到逻辑思辨或得不断练习，从而帮你从根本上提高英语综合实力。</p></a>
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课时安排</h5>
+                                    <p class="list-group-item-text, text-left">17 个课时</p></a>
+
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">适合对象</h5>
+                                        <ul>
+                                            <li class="text-left">有一定英语基础，3000～4000词汇量，希望进一步向中高级进阶的同学。</li>
+                                            <li class="text-left">对自己语音语调不自信，语法结构混乱，逻辑表达不清晰的同学。</li>
+                                            <li class="text-left">希望了解美国饮食文化，并熟练掌握最地道的日常会话的同学。</li>
+                                            <li class="text-left">希望通过系统课程有计划地提高口语的同学。</li>
+                                        </ul>
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程目标</h5>
+                                    <p class="list-group-item-text, text-left">不知不觉中大幅提高口语和听力能力，脱口而出地道表达，摆脱Chinglish, 自信跟美国人交流。根据系统课程的推进，你将具体锻炼到下面三大能力：
+                                        <dl class="dl-horizontal">
+                                            <dt>Survival Language Skills</dt>
+                                            <dd class="text-left">饮食主题六大真实场景设置，地道功能性用语，即学即用。</dd>
+                                            <dt>Interpersonal Skills</dt>
+                                            <dd class="text-left">跟美国人日常交际的能力，如何自如地在对话中询问，回答，反馈，拒绝等。
+                                            </dd>
+                                            <dt>Presentation Skills</dt>
+                                            <dd class="text-left">如何用一段逻辑清晰，有理有据的话展示自己的思维和表达能力，比如复述听到的故事，讲述亲身经历，表达喜好和解释原因。</dd>
+                                        </dl>
+                                    </p></a>
+
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程安排</h5>
+                                    <p class="list-group-item-text">
+                                        <dl class="dl-horizontal">
+                                            <dt>北美吃货必备锦囊 Survival Language Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">你是吃货嘛？</li>
+                                                    <li class="text-left">美国菜单怎么完全看不懂？</li>
+                                                    <li class="text-left">在快餐店点餐可没你想得那么简单。</li>
+                                                    <li class="text-left">去米其林餐厅吃饭是一种什么体验？</li>
+                                                    <li class="text-left">怎么优雅地吃Brunch？</li>
+                                                    <li class="text-left">酒单比菜单还厚，这些单词都是神马？</li>
+                                                    <li class="text-left">再没有比吃甜点更幸福的事了！</li>
+                                                </ul>
+                                            </dd>
+                                            <dt>真实场景实战 Interpersonal Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">怎么在快餐店点餐？</li>
+                                                    <li class="text-left">怎么在高档西餐店就餐？</li>
+                                                    <li class="text-left">怎么在酒吧显得自己很老司机？</li>
+                                                    <li class="text-left">怎么叫外卖？打包怎么说？</li>
+                                                    <li class="text-left">要买单了，这次我请客，下次AA制。</li>
+                                                </ul>
+                                            </dd>
+                                            <dt>你其实很能侃 Presentation Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">麦当劳在中国是什么样的存在？</li>
+                                                    <li class="text-left">你喜欢吃中餐还是西餐？</li>
+                                                    <li class="text-left">一次吃西餐的经历。</li>
+                                                    <li class="text-left">介绍你最喜欢的一道中国菜?</li>
+                                                    <li class="text-left">给我推荐几家附近的好饭馆吧？</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </p></a>
+                                </div>
+
+                                <!-- <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button> -->
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	            </div>
+	        </div>
+       </div>
+
 		<!-- <script type="text/javascript" src='js/jquery.min.js'></script>	 -->
-		<!-- <script type="text/javascript" src='js/bootstrap.min.js'></script>
-		<script type="text/javascript" src='js/imagesloaded.pkgd.min.js'></script>	
+		<!-- <script type="text/javascript" src='js/bootstrap.min.js'></script> -->
+		<!-- <script type="text/javascript" src='js/imagesloaded.pkgd.min.js'></script>	
 		<script type="text/javascript" src='js/isotope.min.js'></script>	
-		<script type="text/javascript" src='js/jquery.countTo.min.js'></script>	
+		
 		<script type="text/javascript" src='js/jquery.cycle2.min.js'></script>	
 		<script type="text/javascript" src='js/jquery.cycle2.swipe.min.js'></script>	
 		<script type="text/javascript" src='js/jquery.flexslider-min.js'></script>
-		<script type="text/javascript" src='js/jquery.magnific-popup.min.js'></script>	
+
 		<script type="text/javascript" src='js/jquery.validate.min.js'></script>	
 		<script type="text/javascript" src='js/jquery.velocity.min.js'></script>	
+	    <script type="text/javascript" src='js/jquery.magnific-popup.min.js'></script>	
 		<script type="text/javascript" src='js/parallax.min.js'></script> -->
 		<!-- <script type="text/javascript" src='js/script.js'></script> -->
 		<!-- <script type="text/javascript" src='js/smoothScroll.min.js'></script>
 		<script type="text/javascript" src='js/superfish.min.js'></script>
 		<script type="text/javascript" src='js/tweets.min.js'></script>
-		<script type="text/javascript" src='js/waypoints.min.js'></script> -->
-		<script type="text/javascript" src='js/jquery.min.js'></script>	
+		<script type="text/javascript" src='js/waypoints.min.js'></script>
+		<script type="text/javascript" src='js/jquery.countTo.min.js'></script>	 -->
+
+		<!-- jQuery -->
+		<!-- <script type="text/javascript" src='js/jquery.min.js'></script> -->
+        <!-- Bootstrap Core JavaScript -->
+        <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+
+<!-- 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+		
+
 		<script>
 			/* <![CDATA[ */
 			var loadPageScripts = [
 				'imagesloaded.pkgd.min.js',
-				'bootstrap.min.js',				
+				'bootstrap.min.js',	
+			    'jquery.min.js'		
 				'isotope.min.js',
 				'jquery.cycle2.min.js',
 				'jquery.cycle2.swipe.min.js',
@@ -721,7 +880,8 @@
 				'jquery.countTo.min.js'
 			];
 			/* ]]> */
-		</script>	
+		</script>
+
 		<script type="text/javascript" src='js/script.js'></script>
 	</body>
 </html>
