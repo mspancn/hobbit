@@ -20,7 +20,7 @@
 		<link rel="shortcut icon" href="img/favicon.png" type="image/png">	
 
 		<script type="text/javascript" src='js/modernizr.min.js'></script>	
-		<script type="text/javascript">$(document).ready(function(){$("#portfolioModal1").modal('show');});</script>
+		<!-- <script type="text/javascript">$(document).ready(function(){$("#portfolioModal1").modal('show');});</script> -->
 	</head>		
 
 	<body>
@@ -72,7 +72,7 @@
 									</li>				
 									<!-- <li class="menu-item-border"><a href="＃">注册</a></li> <ul class="nav navbar-nav navbar-right"> -->
                                    <li><a href="#" class="active"><span class="fa fa-user"></span> 注册 </a></li>
-                                   <li><a href="#" class="active"><span class="fa fa-sign-in"></span> 登录 </a></li>
+                                   <li><a href="#" id="loginBtn" class="active"><span class="fa fa-sign-in"></span> 登录 </a></li>
                                    <li><a href="#" class="link-header link-underline-brand" style="text-transform:capitalize; font-size:10px;">Apply to Teach</a></li>
 								</ul>
 							</div>
@@ -365,7 +365,7 @@
 					</div>
 				</div>
 				<!-- <a class="arrow-bottom" href="portfolio_all.html"    data-animation="fadeInUp" data-delay="0"><span></span><b>查看更多教师资源</b></a> -->
-				<a class="arrow-bottom" href="#" data-animation="fadeInUp" data-delay="0"><span></span><b>查看更多教师资源</b></a>
+				<a class="arrow-bottom" href="#" id="moreTeachers" data-animation="fadeInUp" data-delay="0"><span></span><b>查看更多教师资源</b></a>
 			</div>
 		</section>
 
@@ -445,7 +445,7 @@
 
 						<div class="tAc">
 							<h3 class="content-title-area black-decor" data-animation="fadeIn slow" data-delay="0.2" style="margin-top:30px">
-							    <a href="#">了解更多</a></h3>
+							    <a href="#" id="moreLessons">了解更多</a></h3>
 						</div>
 					</div>
 				</div>
@@ -727,7 +727,45 @@
 			</div>
 		</section>
 
-        
+		<div class="container" >
+			<!-- <button type="button" class="btn btn-default btn-lg" id="loginBtn">Login</button> -->
+
+			<!-- Modal -->
+		    <div class="modal fade" role="dialog" id="loginModal">
+			    <div class="modal-dialog">
+    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+				        <div class="modal-header" style="padding:35px 50px;">
+					          <button type="button" class="close" data-dismiss="modal">&times;</button>
+					          <h4><span class="fa fa-lock"></span> 登录</h4>
+				        </div>
+				        <div class="modal-body" style="padding:40px 50px;">
+					          <form role="form">
+						            <div class="form-group">
+						              <label for="usrname"><span class="fa fa-user"></span> 用户名</label>
+						              <input type="text" name="email" class="email" id="usrname" placeholder="请输入电子邮箱">
+						            </div>
+						            <div class="form-group">
+						              <label for="psw"><span class="fa fa-eye"></span> 密码</label>
+						              <input type="password" class="form-control" id="psw" placeholder="请输入密码">
+						            </div>
+						            <!-- <div class="myCheckbox">
+						              <label><input type="checkbox" value="" checked>记住我</label>
+						            </div> -->
+						            <button type="submit" class="btn btn-success btn-block"><span class="fa fa-power-off"></span> 登录</button>
+					          </form>
+				        </div>
+				        <div class="modal-footer">
+					        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="fa fa-remove"></span> 取消</button>
+					        <p>免费加入MsPan? <a href="#">注册</a></p>
+					        <p>忘记 <a href="#">密码?</a></p>
+				        </div>
+				      </div>
+			    </div>
+			</div>
+		</div>
+
 		<!-- Portfolio Modal 1 -->
 		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-dialog">
@@ -965,6 +1003,117 @@
 	        </div>
        </div>
 
+       <!-- Portfolio Modal 3 -->
+		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>美国校园 Package</h2>
+                                <p class="item-intro text-muted">本系列为你提供“提高口语的唯一途径” &#9473;&#9473; 高效有趣的沉浸式反复操练。</p>
+                                <div class="list-group">
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程介绍</h5>
+                                    <p class="list-group-item-text, text-left">Ms. Pan自主研发科学系统的Content-based课程体系，由浅入深，循序渐进，让你在外教的帮助和鼓励下反复演练。这个课程系列中，每节课你将学到跟主题相关的新鲜内容，你也将有充分的机会运用和演练你的口语。</p>
+                                    <p class="list-group-item-text, text-left">外教的工作不是在你说错的时候不停地打断你，纠正你。 他会像朋友一样耐心的鼓励你，启发你，倾听你，回应你，从而使你对自己的口语越来越自信，可以做到脱口而出，轻松愉快地跟native-speaker交流。希望你能从基础表达到地道交流再到逻辑思辨或得不断练习，从而帮你从根本上提高英语综合实力。</p></a>
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课时安排</h5>
+                                    <p class="list-group-item-text, text-left">20 个课时</p></a>
+
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">适合对象</h5>
+                                        <ul>
+                                            <li class="text-left" type="circle">有较好英文基础，词汇量4000-6000的英语小达人。</li>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <li class="text-left" type="circle">因为疏于练习，希望通过系统课程大强度快速提高听力和口语的同学。</li>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <li class="text-left" type="circle">希望了解美国校园文化，人际关系，并熟练运用相关地道日常会话的同学。</li>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <li class="text-left" type="circle">已经通过托福，雅思，希望为留学打好提前量，提高综合实力的同学。</li>
+                                        </ul>
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程目标</h5>
+                                    <p class="list-group-item-text, text-left">
+                                    大强度的系统练习保证学员可以短时高效地大幅提高口语和听力能力，包括语音语调和思维能力。使你脱口而出地道表达，建立兴趣和自信心, 轻松自如跟native speaker交流并做朋友。根据系统课程的推进，你将具体锻炼到下面三大能力：
+                                        <dl class="dl-horizontal">
+                                            <dt>Social Skills</dt>
+                                            <dd class="text-left">跟美国同学和教授日常交际的能力，如何自如地在对话中询问，回答，反馈，拒绝等。</dd>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <dt>Presentation Skills</dt>
+                                            <dd class="text-left">如何用一段逻辑清晰，有理有据的话展示自己的思维和表达能力，比如复述听到的故事，讲述亲身经历，表达喜好和解释原因。
+                                            </dd>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <dt>Critical Thinking Skills</dt>
+                                            <dd class="text-left">对抽象话题讨论的能力，比如给出建议和原因，比较和对比不同，评价分析某种现象，说服和劝解他人等</dd>
+                                        </dl>
+                                    </p></a>
+
+                                    <a class="list-group-item list-group-item-action">
+                                    <h5 class="list-group-item-heading">课程安排</h5>
+                                    <p class="list-group-item-text">
+                                        <dl class="dl-horizontal">
+                                            <dt>新生生存手册</dt>
+                                            <dt>Presentation Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">这是我的大学，这是我的日常。</li>
+                                                    <li class="text-left">我为什么选了这个专业？</li>
+                                                    <li class="text-left">我这门课能不能得A, 谁说了算？</li>
+                                                    <li class="text-left">美国大学，人际交往到底有多重要？</li>
+                                                    <li class="text-left">什么时候开始找实习？</li>
+                                                    <li class="text-left">这么忙的情况下，我怎么安排时间？</li>
+                                                </ul>
+                                            </dd>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <dt>真实场景实战</dt>
+                                            <dt>Social Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">跟新朋友介绍自己。</li>
+                                                    <li class="text-left">约朋友去吃饭逛街。</li>
+                                                    <li class="text-left">跟教授解释为什么晚交paper。</li>
+                                                    <li class="text-left">跟朋友打听有什么实习工作机会。</li>
+                                                    <li class="text-left">自驾游小锦囊。</li>
+                                                    <li class="text-left">跟派对上的陌生人搭话聊天。</li>
+                                                </ul>
+                                            </dd>
+                                            <div class="spacer" style="height:20px;"></div>
+                                            <dt>思辨话题训练</dt>
+                                            <dt>Critical Thinking Skills</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li class="text-left">很内向不敢主动跟别人交朋友怎么办？</li>
+                                                    <li class="text-left">我的拖延症越来越严重了，怎么破？</li>
+                                                    <li class="text-left">被邀请去一个不想去的派对，怎么办？</li>
+                                                    <li class="text-left">时间太少，想健身做什么运动好呢?</li>
+                                                    <li class="text-left">安排暑假计划，你有什么好建议？</li>
+                                                    <li class="text-left">女朋友生日忘记买礼物了。</li>
+                                                    <li class="text-left">宿舍太吵，搬到校外租房子？</li>
+                                                    <li class="text-left">室友总是回来太晚影响我睡觉。</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </p></a>
+                                </div>
+
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	            </div>
+	        </div>
+       </div>
+
 		<script type="text/javascript" src='js/jquery.min.js'></script>	
 		<!-- <script type="text/javascript" src='js/bootstrap.min.js'></script> -->
 		<!-- <script type="text/javascript" src='js/imagesloaded.pkgd.min.js'></script>	
@@ -1017,5 +1166,30 @@
 		</script>
 
 		<script type="text/javascript" src='js/script.js'></script>
+
+        <script>
+			$(document).ready(function(){
+			$("#loginBtn").click(function(){
+	        $("#loginModal").modal();
+		    });
+		});
+		</script>
+
+		<script>
+			$(document).ready(function(){
+			$("#moreTeachers").click(function(){
+	        $("#loginModal").modal();
+		    });
+		});
+		</script>
+
+		<script>
+			$(document).ready(function(){
+			$("#moreLessons").click(function(){
+	        $("#loginModal").modal();
+		    });
+		});
+		</script>
+
 	</body>
 </html>
