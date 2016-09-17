@@ -1500,3 +1500,9 @@ section#final {background-color:#c2a47d;background-image:url(../img/map-image.pn
 #loginModal .modal-footer {background-color: #f9f9f9;}
 #loginModal a {color:#668cff;}
 #loginModal a:hover, a:focus, a:active {color:#c2a47d;}
+
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
