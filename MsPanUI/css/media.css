@@ -34,6 +34,9 @@
 	.adaptMid {font-size: 15px;}
 	.wechatBarCode {height:150px; width: 150px}
 	#course .portfolio-item{margin:0 0 30px}}
+	
+	.term_text .term_title {margin-top:20px;margin-left:13%;margin-right:13%;font-family:"Microsoft YaHei";font-size:23px;color:rgb(156, 12, 73);}
+    .term_text .term_content {margin-top:5px;margin-left:13%;margin-right:13%;text-indent:2em;font-family:华文仿宋;font-size:18px;line-height:1.5; color:black}
 }
 /* 
 	- (min-width: 480px) and (max-width: 991px) -
@@ -288,4 +291,7 @@
 	.info.alt {padding-top:0;}
 	.portfolios_listing h2 {font-size:16px; line-height:17px;}
 	.portfolio article.alt-animation .entry-content {font-size:13px; line-height:15px;}
+
+	.term_text .term_title {margin-top:15px;margin-left:5%;margin-right:5%;font-family:"Microsoft YaHei";font-size:18px;color:rgb(156, 12, 73);}
+    .term_text .term_content {margin-top:5px;margin-left:5%;margin-right:5%;text-indent:2em;font-family:华文仿宋;font-size:15px;line-height:1.5; color:black}
 }
