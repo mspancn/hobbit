@@ -88,11 +88,11 @@ body {
     line-height: 22px;
 }
 
-/*ul, ol, ul li, ol li {
+ul, ol, ul li, ol li {
     list-style: none outside none;
     margin: 0;
     padding: 0;
-}*/
+}
 
 
 .clear:after {
@@ -1561,5 +1561,3 @@ section#final {background-color:#c2a47d;background-image:url(../img/map-image.pn
 
 section#team .team-member img{opacity: 0.5;filter: alpha(opacity=50);}
 section#team .team-member img:hover{opacity: 1;filter: alpha(opacity=100);}
-
-
