@@ -17,10 +17,9 @@
 		<link rel="stylesheet" href="css/retina.css" media="screen" />
 		<link rel="stylesheet" href="css/media.css" media="screen" />
 		<link rel="stylesheet" href="css/animated.min.css" media="screen" />
-		<link rel="shortcut icon" href="img/favicon.png" type="image/png">	
+		<link rel="shortcut icon" href="img/mspanicon.jpg" type="image/jpg">	
 
-		<script type="text/javascript" src='js/modernizr.min.js'></script>	
-		<!-- <script type="text/javascript">$(document).ready(function(){$("#portfolioModal1").modal('show');});</script> -->
+		<script type="text/javascript" src='js/modernizr.min.js'></script>
 	</head>		
 
 	<body>
@@ -50,30 +49,22 @@
 							</nav>
 							<div class="collapse navbar-collapse m-menu" id="top-main-menu">
 								<ul class="sf-menu superfish-li-relative">
-								<!--superfish-li-relative class for + icon on responsive-->
-									<!-- <li class="current-menu-item">
-										<a href="#welcome">welcome</a>
-									</li> -->
 									<li><a href="#services">核心服务</a></li>
 									<li><a href="#portfolio">北美师资</a></li>
-									<li><a href="#portfolio2">人气课程</a></li>
+									<li><a href="#course">人气课程</a></li>
 									<li class="dropdown">
 										<a href="#about">关于我们</a>
 										<ul class="submenu"> <!--First level submenu-->
 											<li><a href="#about">关于MsPan</a></li>
-											<li><a href="#meet_team">团队成员</a></li>
-											<li><a href="#clients">品牌愿景</a></li>
-											<li><a href="#skills">我们的承诺</a></li>
-											<li><a href="contact.html">联系我们</a></li>
+											<li><a href="about.html">更多关于</a></li>
 											<li><a href="guidance.html">学员指南</a></li>
-											<!-- <li><a href="faq.html">常见问题</a></li> -->
-											<!-- <li><a href="#awards_block">Awards</a></li> -->
+											<li><a href="contact.html">联系我们</a></li>
 										</ul>
 									</li>				
 									<!-- <li class="menu-item-border"><a href="＃">注册</a></li> <ul class="nav navbar-nav navbar-right"> -->
                                    <li><a href="#" class="active"><span class="fa fa-user"></span> 注册 </a></li>
                                    <li><a href="#" id="loginBtn" class="active"><span class="fa fa-sign-in"></span> 登录 </a></li>
-                                   <li><a href="#" class="link-header link-underline-brand" style="text-transform:capitalize; font-size:10px;">Apply to Teach</a></li>
+                                   <li><a href="teach2.html" class="link-header link-underline-brand" style="text-transform:capitalize; font-size:10px;">Apply to Teach</a></li>
 								</ul>
 							</div>
 						</div></div>
@@ -84,22 +75,21 @@
 		<!--Welcome section-->
         <section class="waypoint video-block fullscreen" data-hash="welcome">
 			<video autoplay="autoplay" muted="muted" loop="loop" poster="img/woman_front.jpg" class="background-video">
-				<source src="video/woman.mov" type="video/mp4">
-				<source src="video/woman.ogm" type="video/ogm">
+				<source src="video/woman-small.mov" type="video/mp4">
+				<source src="video/woman-small.ogm" type="video/ogm">
 			</video>
 			<div class="text-inner">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-12 clearfix">
-							<!-- <ul class="features" data-animation="fadeIn" data-delay="0.4">
-								<li>北美</li></ul> -->
+							<ul class="features" data-animation="fadeIn" data-delay="0.4">
+								<li>北美</li><li>常春藤</li><li>名校</li></ul>
 							<h6><a href="#services" class="to-text" data-animation="flipInX" data-delay="0">美国外教一对一口语</a></h6>
-							<!-- <span class="learn-more"   data-animation="fadeInUp" data-delay="0.6">-  打造无限可能的45分钟，We Believe In You. -</span> -->
 							<span class="learn-more"   data-animation="fadeInUp" data-delay="0.6">-  英语当作母语说 -</span>
 						</div>
 					</div>
 					<div class="spacer" style="height:80px;"></div>
-					<button type="button" class="btn btn-lg btn-primary">
+					<button type="button" class="btn btn-lg btn-primary" id="startLearning">
                          <span style="color:black">开始学习</span>
                     </button>
 				</div>
@@ -117,26 +107,29 @@
 						<div class="tAc">
 							<h2 class="big-title"    data-animation="fadeInUp slow" data-delay="0" style="text-transform:capitalize;">我们的核心服务</h2>
 							<!-- <p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">MsPan为你精心定制美国外教</p> -->
-							<p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">MsPan 为你精挑细选严格把关</p>
+							<p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">MsPan 为您精挑细选严格把关</p>
 						</div>
 					</div>
 					<div class="col-sm-4 top-features content-element" >
-						<i class="fa fa-tablet feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+					    <i class="fa fa-trophy feature"  data-animation="fadeInUp " data-delay="0.3"></i>
 						<h3 data-animation="fadeInUp " data-delay="0.5">常春藤名校外教一对一</h3>
 						<!-- <p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">全美名校大学生与ESL专业教师，经苛刻选拔，专业教学培训，考核合格，才能上岗。<br>为你提供最原汁原味的浸入式教育，精英外教必须做到发音标准，语言多样，知识广泛，教学严谨，MsPan北美教师组严格把关从未让步。</p> -->
-						<p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">精英外教必须做到发音标准，语言多样，知识广泛，教学严谨，MsPan北美教师组严格把关从未让步。</p>
+<!-- 						<p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">精英外教必须做到发音标准，语言多样，知识广泛，教学严谨，MsPan北美教师组严格把关从未让步。</p> -->
+						<p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">
+						MsPan北美教师组严格把关，精挑细选的美国常春藤名校外教，知识广泛，教学严谨，发音标准，亲切幽默。</p>
 					</div>
 					<div class="col-sm-4 top-features content-element">
 						<i class="fa fa-rocket feature"  data-animation="fadeInUp " data-delay="0.3"></i>
 						<h3 data-animation="fadeInUp " data-delay="0.5">量身定制精品课程</h3>
 						<!-- <p class="adaptBig" data-animation="fadeInUp " data-delay="0.7" >进阶式课程设计，新颖实用，组合多样，针对性强；为你所需，因材施教。<br> MsPan教研中心不仅致力于口语核心能力，更强调逻辑思维能力与沟通交流能力的共同飞跃。教学顾问的全程陪伴，将为每一位学生提供详尽课程计划于建议，并架起外教反馈与学生家长之间必要的沟通桥梁。</p> -->
 						<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7" >
-						<!-- MsPan教研中心不仅致力于口语核心能力，更强调逻辑思维能力与沟通交流能力的共同飞跃。<br> -->教学顾问全程陪伴，将为每一位学生提供详尽课程计划于建议，并架起外教反馈与学生家长之间必要的沟通桥梁。</p>
+						<!-- MsPan教研中心不仅致力于口语核心能力，更强调逻辑思维能力与沟通交流能力的共同飞跃。<br> -->教学顾问全程陪伴，为每一位学生提供详尽课程计划与建议，架起外教与学生家长之间必要的沟通桥梁。</p>
 					</div>
 					<div class="col-sm-4 top-features content-element" >
-						<i class="fa fa-trophy feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+						<i class="fa fa-tablet feature"  data-animation="fadeInUp " data-delay="0.3"></i>
 						<h3 data-animation="fadeInUp " data-delay="0.5">随时随地一键约课</h3>
-						<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7">教务团队为你细心提供每一位教师时间安排，让你随心所欲，自主选择，高效利用碎片时间，养成自主学习习惯。</p>
+						<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7">
+						MsPan教务团队保证每一位教师时间安排一目了然，让您随心所欲，自主选择，高效利用碎片时间，养成自主学习习惯。</p>
 					</div>
 				</div>
 				<div class="spacer" style="height:41px;"></div>
@@ -149,127 +142,79 @@
 
 			<div class="video-block features-watch alt-bg" style="padding-top:189px; padding-bottom:173px;">
 				<video autoplay="autoplay" muted="muted" loop="loop" poster="img/man_front.jpg" class="background-video">
-					<source type="video/mp4" src="video/man.mov">
-					<source type="video/ogm" src="video/man.ogm">
+					<source type="video/mp4" src="video/man-small.mov">
+					<source type="video/ogm" src="video/man-small.ogm">
 				</video>
-				<div class="overlay" style="opacity:0.3;"></div>
+				<div class="overlay color-2" style="opacity:0.5;"></div>
 			</div>
 		</section>
 
-		<!--About section-->
-		<section class="waypoint">
+		<!-- <section class="waypoint">
 			<div class="spacer" style="height:20px;"></div>
-			<!--Text and bars block-->
 			<div class="container" id="skills">
 			    <div class="spacer"  style="height:82px;"></div>
-				<div class="row">
-					<!--Simple text half-->
-					<div class="col-sm-3 col-sm-offset-2">
-						<h2 data-animation="fadeIn slow" data-delay="0">我们的承诺</h2>
-						<div class="spacer" style="height:25px;"></div>
-						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">精英外教：高品质，严筛选</p>
-						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">在线上课：很流畅，超自由</p>
-						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">教学顾问：全方位，软监督</p>
-					</div>
-					<!--Bars half-->
-					<div class="col-sm-6">
-						<div class="bars" data-animation="fadeIn faster" data-delay="0">
-							<div class="progressbar" style="background-color: #dcdcdc">			
-								<div class="progress animate_progress" data-percent="45">
-									<div class="bar-outer">
-										<div class="bar" style="background-color: #c2a47d;" data-percent="45"></div>
-										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">100% 北美国籍外教</div></div>
-									</div>
-								</div>
-							</div>
-							<div class="progressbar" style="background-color: #dcdcdc">			
-								<div class="progress animate_progress" data-percent="90">
-									<div class="bar-outer">
-										<div class="bar" style="background-color: #c2a47d;" data-percent="90"></div>
-										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">200% 全身心为你量身定制课程 </div></div>
-									</div>
-								</div>
-							</div>
-							<div class="progressbar" style="background-color: #dcdcdc">			
-								<div class="progress animate_progress" data-percent="80">
-									<div class="bar-outer">
-										<div class="bar" style="background-color: #c2a47d;" data-percent="80"></div>
-										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">90% 名校大学生，10％ESL专业教师</div></div>
-									</div>
-								</div>
-							</div>
-							<div class="progressbar" style="background-color: #dcdcdc">			
-								<div class="progress animate_progress" data-percent="60">
-									<div class="bar-outer">
-										<div class="bar" style="background-color: #c2a47d;" data-percent="60"></div>
-										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">0％ 风险，高度透明，无忧担保</div></div>
-									</div>
-								</div>
-							</div>
+			    <div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="tAc">
+									<h2 class="big-title"    data-animation="fadeInUp slow" data-delay="0" style="text-transform:capitalize;">轻松三步与外教一对一</h2>
+									<p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">真实的语言环境</p>
+								<div class="spacer" style="height:35px;"></div>
+							</div>						
 						</div>
 					</div>
 				</div>
-				<!--Awards block-->
 				<div class="row">
 					<div class="col-md-12" id="awards_block">
-						<hr style="margin:72px 0 58px 0; border-color:#dadada;" />
-						<div class="carousel awards-carousel" id="awards">
-							<ul class="listing slides clearfix" data-animation="fadeIn" data-delay="0.2">
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
-							</ul>
+						<div class="spacer" style="height:59px;"></div>
+						<div class="col-sm-4 top-features content-element" >
+						    <i class="fa fa-search feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">匹配老师</h3>
+							<p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">注册后由专属学习顾问为您定制学习计划，匹配最优外教</p>
 						</div>
+						<div class="col-sm-4 top-features content-element">
+							<i class="fa fa-calendar feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">预约课程</h3>
+							<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7" >
+							选好外教后，您可以自主选择上课时段，频率，课程，主动参与，一对一，步步进阶</p>
+						</div>
+						<div class="col-sm-4 top-features content-element" >
+							<i class="fa fa-television feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">开始学习</h3>
+							<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7">
+							通过高品质线上聊天工具和外教上课。不论你在何地，让每一次成为你学习英语的习惯</p>
+						</div>
+
 					</div>
+
 				</div>
 			</div>
+			<hr style="margin:72px 0 58px 0; border-color:#dadada;" />
 			<div class="spacer" style="height:59px;"></div>
-		</section>
+		</section> -->
 
 		<!--Portfolio section-->
 		<section class="waypoint"  data-hash="portfolio">
-			<div>
-				<div class="spacer" style="height:94px;"></div>
+			<div class="container">
+				<div class="spacer" style="height:130px;"></div>
 				<div class="container">
 					<div class="col-sm-12">
 						<div class="row">
 							<div class="tAc">
 								<h2 class="big-title"  data-animation="fadeInUp slow" data-delay="0">北美明星教师团队</h2>
-								<p class="adaptBig" style="max-width:800px; margin:0 auto;"  data-animation="fadeInUp slow" data-delay="0.2">外教全部都是纯正地道的美式英语，用认真负责的态度陪学员练习口语，提升能力。</p>
+								<p class="adaptBig" style="max-width:800px; margin:0 auto;" data-animation="fadeInUp slow" data-delay="0.2">
+									MsPan 外教全部都是纯正地道的美式英语
+								</p>
+								<p class="adaptBig" style="max-width:800px; margin:0 auto;"  data-animation="fadeInUp slow" data-delay="0.2">用认真负责的态度陪学员练习口语，了解美国文化。</p>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="spacer" style="height:79px;"></div>
+				<div class="spacer" style="height:60px;"></div>
 			</div>	
-
 
 			<!-- <div id="ajaxed_content"></div> -->
 			<div class="portfolio">
-				<!--Filters block-->
-				<!-- <div class="additional-area"   data-animation="fadeInUp" data-delay="0.3">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="filters filters-center clearfix"></div>
-							</div>
-							<div class="clear"></div>
-						</div>
-					</div>
-				</div> -->
 				<!--Images block-->
 				<div class="entry-content">
 					<div class="full isotope-bg">
@@ -291,7 +236,7 @@
 												</div></div></div>
 										<img src="img/teacher2.jpg" class="img-responsive" alt="" />
 								</div>
-							</article><article class="portfolios_listing full ajaxed alt-animation" data-category="专业ESL教师">
+							</article><article class="portfolios_listing full ajaxed alt-animation hidden-xs hidden-sm" data-category="专业ESL教师">
 								<div class="entry-image">
 								<!-- <a class="thumb" data-title="Porftolio Post with Ajax" data-lightbox="gallery-main-image" href="ajax_portfolio_item_sidebar.html"> -->
 										<div class="overlay-alt"><div class="wrapper"><div class="cell-2">
@@ -343,7 +288,7 @@
 												</div></div></div>
 										<img src="img/teacher8.jpg" class="img-responsive" alt="" />
 								</div>
-							</article><article class="portfolios_listing full ajaxed alt-animation hidden-xs hidden-sm" data-category="美国名校大学生">
+							</article><article class="portfolios_listing full ajaxed alt-animation" data-category="美国名校大学生">
 								<div class="entry-image">
 										<div class="overlay-alt"><div class="wrapper"><div class="cell-2">
 													<div class="top-title-gallery animated-pf "><h2>Bryant</h2></div>
@@ -367,29 +312,33 @@
 				<!-- <a class="arrow-bottom" href="portfolio_all.html"    data-animation="fadeInUp" data-delay="0"><span></span><b>查看更多教师资源</b></a> -->
 				<a class="arrow-bottom" href="#" id="moreTeachers" data-animation="fadeInUp" data-delay="0"><span></span><b>查看更多教师资源</b></a>
 			</div>
+			<div class="spacer" style="height:79px;"></div>
 		</section>
 
-		<!--Portfolio section 2 -->
-		<section class="waypoint" id="portfolio2" data-hash="portfolio2">
+		<!--Course section -->
+		<section class="waypoint" id="course" data-hash="course">
 			<!--Simple text block-->
-			<div id="create">
-				<div class="spacer" style="height:92px;"></div>
-				<div class="container">
-					<div class="col-sm-12">
-						<div class="row">
-							<div class="tAc">
-								<h2 class="big-title"  data-animation="fadeInUp slow" data-delay="0">人气课程</h2>
-								<p class="adaptBig" style="max-width:800px; margin:0 auto;" data-animation="fadeInUp slow" data-delay="0.2">
-									MsPan 精心打造进阶式课程计划
-								</p>
-								<p class="adaptBig" style="max-width:800px; margin:0 auto;" data-animation="fadeInUp slow" data-delay="0.2">
-									为你提供最新颖的学习结构，最有趣高效的学习方法，最可靠实用的资源
-								</p>
+			<div class="container">
+			    <div class="spacer" style="height:100px;"></div>
+				<div id="create">
+					<!-- <div class="spacer" style="height:80px;"></div> -->
+					<div class="container">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="tAc">
+									<h2 class="big-title"  data-animation="fadeInUp slow" data-delay="0">人气课程</h2>
+									<p class="adaptBig" style="max-width:800px; margin:0 auto;" data-animation="fadeInUp slow" data-delay="0.2">
+										MsPan 精心打造进阶式课程计划
+									</p>
+									<p class="adaptBig" style="max-width:800px; margin:0 auto;" data-animation="fadeInUp slow" data-delay="0.2">
+									    为您提供最有效的方法，最实用的资源，最宝贵的经验。
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="spacer" style="height:83px;"></div>
 				</div>
-				<div class="spacer" style="height:83px;"></div>
 			</div>
 			<!--Steps block-->
 			<div class="alt-bg-2">
@@ -397,7 +346,7 @@
 				<div class="container">
 					<div class="row">
 					    <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
-		                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+		                    <a href="#courseModal1" class="portfolio-link" data-toggle="modal">
 		                        <div class="portfolio-hover">
 		                            <div class="portfolio-hover-content">
 		                                <i class="fa fa-plus fa-3x"></i>
@@ -408,40 +357,28 @@
 		                    <div class="portfolio-caption"><h4>北美吃货</h4></div>
 	                    </div>
 		                <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
-		                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+		                    <a href="#courseModal2" class="portfolio-link" data-toggle="modal">
 		                        <div class="portfolio-hover">
 		                            <div class="portfolio-hover-content">
 		                                <i class="fa fa-plus fa-3x"></i>
 		                            </div>
 		                        </div>
-		                        <img src="img/nycmap1.jpg" class="img-responsive" alt="">
+		                        <img src="img/nycmap.jpg" class="img-responsive" alt="">
 		                    </a>
 		                    <div class="portfolio-caption"><h4>玩转美国</h4></div>
 		                </div>
 
 		                <div class="col-sm-4 portfolio-item" data-animation="fadeInScale " data-delay="0.4">
-		                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+		                    <a href="#courseModal3" class="portfolio-link" data-toggle="modal">
 		                        <div class="portfolio-hover">
 		                            <div class="portfolio-hover-content">
 		                                <i class="fa fa-plus fa-3x"></i>
 		                            </div>
 		                        </div>
-		                        <img src="img/university.jpg" class="img-responsive" alt="">
+		                        <img src="img/campus.jpg" class="img-responsive" alt="">
 		                    </a>
 		                    <div class="portfolio-caption"><h4>美国校园</h4></div>
 		                </div>
-	                        
-
-<!-- 						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.2"><img src="img/dinning.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/>
-                            <span>
-				    			<a href="#">Mike Chen</a>
-	       						<span class="post">CEO</span>
-							</span>
-						</div>
-						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.4"><img src="img/nycmap1.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/></div>
-						<div class="col-sm-4" data-animation="fadeInScale " data-delay="0.6"><img src="img/university.jpg" alt="" class="img-responsive" style="width:324px; max-height:230px; overflow:hidden"/>
-						</div> -->
-
 
 						<div class="tAc">
 							<h3 class="content-title-area black-decor" data-animation="fadeIn slow" data-delay="0.2" style="margin-top:30px">
@@ -451,12 +388,11 @@
 				</div>
 				<div class="spacer" style="height:15px;"></div>
 			</div>
-	  </section>
-   
-      <!--About section 2-->
-	  <section class="waypoint"  data-hash="about">
-	     <!-- <section class="waypoint"  data-hash="about"> -->
-			<div class="spacer" style="height:76px;"></div>
+	    </section>
+    
+        <!--About section 2-->
+	    <section class="waypoint" id="about" data-hash="about">
+			<div class="spacer" style="height:130px;"></div>
 			<!--Simple text block-->
 			<div class="container">
 				<div class="row" id="indexAbout">
@@ -484,9 +420,12 @@
 				</div>
 				<div class="spacer" style="height:80px;"></div>
 			</div>
-	        <div class="alt-bg-3" id="team">
+	    </section>
+
+	    <section class="waypoint" id="meet_team" data-hash="meet_team">
+	        <div class="alt-bg-3">
 				<!--Flip cards block-->
-				<div class="container" id="meet_team">
+				<div class="container">
 					<div class="spacer" style="height:77px;"></div>
 					<div class="row">
 						<div class="tAc">
@@ -503,17 +442,17 @@
 											</span>
 										</div>
 										<div class="back"><div class="wrapper-tb"><div class="cell-2">
-													<div class="for-mobile-flip">
+													<!-- <div class="for-mobile-flip"> -->
 														<h4>Ms. Pan</h4>
 														<span class="post">Chief Product Designer</span>
 														<p class="flip-text">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nulla erat, eget fringilla eros. Donec suscipit dui felis. Nulla facilisi. fringilla ultrices sit amet nec leo.
-															<!-- <a href="#">http://olegnax.com</a> -->
+														     We help the students on 
+														     improving their English language skills, and we help them prepare 
+														     on the incoming new life style in America. We can do this better
+														     than the others, because 
+														     we’ve been there before, and we know how hard it is. 
 														</p>
-													</div>
-													<!-- <div class="socials without-border">
-														<a href="#" class="social_links facebook"><span>facebook</span></a>
-													</div> -->
+													<!-- </div> -->
 												</div></div></div>
 									</div>
 								</div>
@@ -529,13 +468,13 @@
 											</span>
 										</div>
 										<div class="back"><div class="wrapper-tb"><div class="cell-2">
-													<div class="for-mobile-flip">
+													<!-- <div class="for-mobile-flip"> -->
 														<h4>Mike Chen</h4>
 														<span class="post">CEO</span>
 														<p class="flip-text">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nulla erat, eget fringilla eros. Donec suscipit dui felis. Nulla facilisi. fringilla ultrices sit amet nec leo.
+														     We develop education products, such as education catalog, topics design, programs targeting language, cultural adaptation, and learning skills. We select tutors who are ESL professionals, students and alumni from IVY-league college and other top schools. 
 														</p>
-													</div>
+													<!-- </div> -->
 												</div></div></div>
 									</div>
 								</div>
@@ -550,15 +489,20 @@
 												<span class="post">CTO</span>
 											</span>
 										</div>
-										<div class="back"><div class="wrapper-tb"><div class="cell-2">
-													<div class="for-mobile-flip">
-														<h4>Bo Liang</h4>
-														<span class="post">CTO</span>
-														<p class="flip-text">
-															Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sed nulla erat, eget fringilla eros. Donec suscipit dui felis. Nulla facilisi. fringilla ultrices sit amet nec leo.
-														</p>
-													</div>
-										</div></div></div>
+										<div class="back">
+										    <div class="wrapper-tb">
+											    <div class="cell-2">
+														<!-- <div class="for-mobile-flip"> -->
+															<h4>Bo Liang</h4>
+															<span class="post">CTO</span>
+															<p class="flip-text">
+															      We develop online technology platform, where Chinese students can visit and find tutors.
+															      We wanted to make sure everyone gets their best quality of service.
+															</p>
+														<!-- </div> -->
+											    </div>
+										    </div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -570,7 +514,7 @@
 	  </section>
 
       <!--Clients section-->
-	  <section class="waypoint parallax-section" data-hash="clients">
+	  <section class="waypoint parallax-section" id="clients" data-hash="clients">
 			<div class="parallax-holder">
 				<div class="paralayer" data-paraspeed="0.5" style="background-image: url(img/nyc.jpg); height:auto; width:100%; overflow:hidden;"></div>
 			</div>
@@ -599,20 +543,128 @@
 											</div>
 										</div></div>
 								</div></div></div></div>
-					<div class="contbox"><div class="container"><div class="row"><div class="col-sm-12">
-									<div class="wrapper-tb"><div class="cell-2">
-											<h2 class="slider-title-3 big">我们的口碑</h2>
-											<span class="slider-text">&quot; Quisque ullamcorper tincidunt facilisis. Suspendisse pretium interdum est, id dignissim purus vestibulum eu. Aenean bibendum felis vitae dolor bibendum, non imperdiet neque pulvinar. Nam sollicitudin cursus nisi, quis semper tellus vehicula ac.</span>
-											<div class="no-avatar">
-												<a href="#">Walter White</a><br />
-												<em>CEO Big Company</em>
-											</div>
-										</div></div>
-								</div></div></div></div>
 					<a class="tp-leftarrow  default prev"></a>
 					<a class="tp-rightarrow  default next"></a>
 				</div>		
 			</div>
+		</section>
+
+		<!--About section-->
+		<section class="waypoint">
+			<div class="spacer" style="height:130px;"></div>
+			<!--Text and bars block-->
+			<div class="container" id="skills">
+			    <!-- <div class="spacer"  style="height:82px;"></div> -->
+			    <div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="tAc">
+								<!-- <i>
+								    <img src="img/mspan.png" class="img-responsive" style="margin: 0 auto; height:30px; width: 30px " alt="">
+								</i> -->
+									<h2 class="big-title"    data-animation="fadeInUp slow" data-delay="0" style="text-transform:capitalize;">轻松三步与外教一对一</h2>
+							<!-- <p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">MsPan为你精心定制美国外教</p> -->
+									<p class="adaptBig" style="max-width:500px; margin:0 auto; padding-bottom:63px;"    data-animation="fadeInUp slow" data-delay="0.2">真实的语言环境</p>
+								<!-- <div class="spacer" style="height:35px;"></div> -->
+                                <!-- <img src="img/mspan1.jpg" class="img-responsive" style="margin: 0 auto;" alt=""> -->
+							</div>						
+						</div>
+					</div>
+				</div>
+				<!-- <div class="row">
+					<div class="col-sm-3 col-sm-offset-2">
+						<h2 data-animation="fadeIn slow" data-delay="0">我们的承诺</h2>
+						<div class="spacer" style="height:25px;"></div>
+						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">精英外教：高品质，严筛选</p>
+						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">在线上课：很流畅，超自由</p>
+						<p class="adaptBig" data-animation="fadeInUp slow" data-delay="0.2">教学顾问：全方位，软监督</p>
+					</div>
+
+					<div class="col-sm-6">
+						<div class="bars" data-animation="fadeIn faster" data-delay="0">
+							<div class="progressbar" style="background-color: #dcdcdc">			
+								<div class="progress animate_progress" data-percent="45">
+									<div class="bar-outer">
+										<div class="bar" style="background-color: #c2a47d;" data-percent="45"></div>
+										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">100% 北美国籍外教</div></div>
+									</div>
+								</div>
+							</div>
+							<div class="progressbar" style="background-color: #dcdcdc">			
+								<div class="progress animate_progress" data-percent="90">
+									<div class="bar-outer">
+										<div class="bar" style="background-color: #c2a47d;" data-percent="90"></div>
+										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">200% 全身心为你量身定制课程 </div></div>
+									</div>
+								</div>
+							</div>
+							<div class="progressbar" style="background-color: #dcdcdc">			
+								<div class="progress animate_progress" data-percent="80">
+									<div class="bar-outer">
+										<div class="bar" style="background-color: #c2a47d;" data-percent="80"></div>
+										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">90% 名校大学生，10％ESL专业教师</div></div>
+									</div>
+								</div>
+							</div>
+							<div class="progressbar" style="background-color: #dcdcdc">			
+								<div class="progress animate_progress" data-percent="60">
+									<div class="bar-outer">
+										<div class="bar" style="background-color: #c2a47d;" data-percent="60"></div>
+										<div class="progressbar-title"><div class="progressbar-title-inner" style="color: #fff">0％ 风险，高度透明，无忧担保</div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<!--Awards block-->
+				<div class="row">
+					<div class="col-md-12" id="awards_block">
+						
+						<!-- <div class="carousel awards-carousel" id="awards">
+							<ul class="listing slides clearfix" data-animation="fadeIn" data-delay="0.2">
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+								<li><a href="#"><img src="img/award.png" alt="" class="img-responsive" /></a></li>
+							</ul>
+						</div> -->
+						<!-- <div class="spacer" style="height:59px;"></div> -->
+						<div class="col-sm-4 top-features content-element" >
+						    <i class="fa fa-search feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">寻找老师</h3>
+							<p  class="adaptBig" data-animation="fadeInUp " data-delay="0.7">注册后由专属学习顾问为您定制学习计划，匹配最优外教</p>
+						</div>
+						<div class="col-sm-4 top-features content-element">
+							<i class="fa fa-calendar feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">预约课程</h3>
+							<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7" >
+							选好外教后，您可以自主选择上课时段，频率，课程，主动参与，一对一，步步进阶</p>
+						</div>
+						<div class="col-sm-4 top-features content-element" >
+							<i class="fa fa-television feature"  data-animation="fadeInUp " data-delay="0.3"></i>
+							<h3 data-animation="fadeInUp " data-delay="0.5">开始学习</h3>
+							<p class="adaptBig" data-animation="fadeInUp " data-delay="0.7">
+							通过高品质线上聊天工具和外教上课。不论你在何地，让每一次成为你学习英语的习惯</p>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+			<!-- <hr style="margin:72px 0 58px 0; border-color:#dadada;" /> -->
+			<div class="spacer" style="height:59px;"></div>
 		</section>
 
 	  <section class="waypoint">
@@ -693,7 +745,7 @@
 								    <img src="img/weixinIcon.png" class="img-responsive" style="margin: 0 auto; height:30px; width: 30px " alt="">
 								</i>
 								<div class="spacer" style="height:35px;"></div>
-                                <img src="img/wechatID.jpg" class="img-responsive wechatBarCode" style="margin: 0 auto;" alt="">
+                                <img src="img/wechat.jpg" class="img-responsive wechatBarCode" style="margin: 0 auto;" alt="">
 							</div>						
 						</div>
 					</div>
@@ -709,12 +761,7 @@
 							    <div style="margin-top: 10px;">
                                     <a href = "#pagetop" style="font-family:Kaushan Script,Helvetica Neue,Helvetica,Arial,cursive; font-size:25px; text-decoration: none; color:#fed136">MsPan</a>
                                 </div><br>
-                                 <div class="links text-center text-uppercase"><a href="guidance.html" style="text-decoration: none;">学员指南</a> · <a href="contact.html" style="text-decoration: none;">联系我们</a> · <a href="cooperation.html" style="text-decoration: none;" rel="nofollow">渠道合作</a> · <a href="terms.html" rel="nofollow" style="text-decoration: none;">法律声明</a> · <a href="test.html" rel="nofollow" style="text-decoration: none;">Testing</a> 
-                                 <!-- ·  -->
-                                  <!-- <a href="#" class="direct" style="text-decoration: none;">
-                                         <i class="fa fa-facebook"></i></a> · 
-                                  <a href="#" class="direct" style="text-decoration: none;">
-                                         <i class="fa fa-twitter" style="text-decoration: none;"></i></a> -->
+                                 <div class="links text-center text-uppercase"><a href="about.html" style="text-decoration: none;">关于我们</a> · <a href="guidance.html" style="text-decoration: none;">学员指南</a> · <a href="contact.html" style="text-decoration: none;">联系我们</a> · <a href="terms.html" rel="nofollow" style="text-decoration: none;">法律声明</a>
                                   </div>
                                   <div class="spacer" style="height:20px;"></div>
 								<div style="font-weight:lighter;color:rgb(131, 128, 128);font-size:13px;"><div>MsPan 精英引领 伴随始终</div>
@@ -728,8 +775,6 @@
 		</section>
 
 		<div class="container" >
-			<!-- <button type="button" class="btn btn-default btn-lg" id="loginBtn">Login</button> -->
-
 			<!-- Modal -->
 		    <div class="modal fade" role="dialog" id="loginModal">
 			    <div class="modal-dialog">
@@ -753,11 +798,11 @@
 						            <!-- <div class="myCheckbox">
 						              <label><input type="checkbox" value="" checked>记住我</label>
 						            </div> -->
-						            <button type="submit" class="btn btn-success btn-block"><span class="fa fa-power-off"></span> 登录</button>
+						            <button type="submit" class="btn btn-block"><span class="fa fa-power-off"></span> 登录</button>
 					          </form>
 				        </div>
 				        <div class="modal-footer">
-					        <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="fa fa-remove"></span> 取消</button>
+					        <button type="submit" class="btn btn-default pull-left" data-dismiss="modal"><span class="fa fa-remove"></span> 取消</button>
 					        <p>免费加入MsPan? <a href="#">注册</a></p>
 					        <p>忘记 <a href="#">密码?</a></p>
 				        </div>
@@ -766,8 +811,8 @@
 			</div>
 		</div>
 
-		<!-- Portfolio Modal 1 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+		<!-- Course Modal 1 -->
+		<div class="course-modal modal fade" id="courseModal1" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -871,11 +916,6 @@
 
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
-
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -883,8 +923,8 @@
 	        </div>
        </div>
 
-       <!-- Portfolio Modal 2 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+       <!-- Course Modal 2 -->
+		<div class="course-modal modal fade" id="courseModal2" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -991,11 +1031,6 @@
 
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                             </div>
-
-                            <!-- <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1003,8 +1038,8 @@
 	        </div>
        </div>
 
-       <!-- Portfolio Modal 3 -->
-		<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+       <!-- Course Modal 3 -->
+		<div class="course-modal modal fade" id="courseModal3" tabindex="-1" role="dialog" aria-hidden="true">
 	        <div class="modal-dialog">
 	            <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -1186,6 +1221,14 @@
 		<script>
 			$(document).ready(function(){
 			$("#moreLessons").click(function(){
+	        $("#loginModal").modal();
+		    });
+		});
+		</script>
+
+		<script>
+			$(document).ready(function(){
+			$("#startLearning").click(function(){
 	        $("#loginModal").modal();
 		    });
 		});
