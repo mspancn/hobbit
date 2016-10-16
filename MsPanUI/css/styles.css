@@ -1561,3 +1561,63 @@ section#final {background-color:#c2a47d;background-image:url(../img/map-image.pn
 
 section#team .team-member img{opacity: 0.5;filter: alpha(opacity=50);}
 section#team .team-member img:hover{opacity: 1;filter: alpha(opacity=100);}
+
+
+
+
+.big-left-bg-2 {background-color:#faf7f3; position:relative; overflow:hidden;}
+.half_left_layout {background-position:center center; background-size:cover; left:0; top:0; position:absolute; height:100%; width:40%;}
+.section-image {min-width:100%; min-height:100%; left:0; position:absolute; top:0; overflow:hidden; z-index:1;background: url("http://placehold.it/1253x681") no-repeat left top; }
+.half-layout-container {width:51.8%; margin:0 4.1%; position:relative; z-index:5;}
+.inner-cont {max-width:660px; float:left;}
+
+.big-left-bg-2.color-1 .info h3.fa {color:#000; padding-bottom:0;}
+.big-left-bg-2.color-1  .info li:before {color:#835b3f;}
+.big-left-bg-2.color-1 .info h3.fa:before {color:#835b3f; margin-left:8px; margin-right:14px;}
+.big-left-bg-2.color-1  ul.info li {margin-bottom:11px; padding-bottom:13px;}
+.big-left-bg-2.color-1 ul.info {display:inline-block; width:220px;}
+.big-left-bg-2.color-1 ul.info li.no-brd {border:none;}
+.big-left-bg-2.color-1 .holder {
+    margin: 0 auto;
+    width: 1139px;
+    padding-right:15px;
+}
+.fRight {float:right;}
+
+/* new parallax */
+
+section.parallax-section {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index:10;}
+.parallax-holder {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center 0;
+    background-size: cover;
+}
+.parallax-holder .paralayer {
+    background-position: center 0;
+    background-size: cover;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    width: 100%;}
+
+.overlay {background-position: center center; background-repeat: repeat; height: 100%; left: 0; opacity: 0.55; position: absolute; top: 0; width: 100%; z-index: 3; background:#000; overflow:hidden;}
+
+/* end of new parallax */
+
+h2.to-text {
+    border: 6px solid #fff;
+    color: #fff;
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 48px;
+    padding: 30px 38px 29px;
+    text-transform: uppercase;
+}
