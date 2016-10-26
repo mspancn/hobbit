@@ -1567,7 +1567,10 @@ section#team .team-member img:hover{opacity: 1;filter: alpha(opacity=100);}
 
 .big-left-bg-2 {background-color:#faf7f3; position:relative; overflow:hidden;}
 .half_left_layout {background-position:center center; background-size:cover; left:0; top:0; position:absolute; height:100%; width:40%;}
-.section-image {min-width:100%; min-height:100%; left:0; position:absolute; top:0; overflow:hidden; z-index:1;background: url("http://placehold.it/1253x681") no-repeat left top; }
+.section-image {min-width:100%; min-height:100%; left:0; position:absolute; top:0; overflow:hidden; z-index:1;
+    background: url("../img/tutor.jpg") no-repeat left top; }
+/*.section-image {min-width:100%; min-height:100%; left:0; position:absolute; top:0; overflow:hidden; z-index:1;
+    background: url("http://placehold.it/1253x681") no-repeat left top; }*/
 .half-layout-container {width:51.8%; margin:0 4.1%; position:relative; z-index:5;}
 .inner-cont {max-width:660px; float:left;}
 

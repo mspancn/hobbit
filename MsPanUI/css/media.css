@@ -37,6 +37,7 @@
 	
 	.term_text .term_title {margin-top:20px;margin-left:13%;margin-right:13%;font-family:"Microsoft YaHei";font-size:23px;color:rgb(156, 12, 73);}
     .term_text .term_content {margin-top:5px;margin-left:13%;margin-right:13%;text-indent:2em;font-family:华文仿宋;font-size:18px;line-height:1.5; color:black}
+    .faqContainer {max-width:80%}
 }
 /* 
 	- (min-width: 480px) and (max-width: 991px) -
@@ -192,6 +193,7 @@
 	.full article {max-width: 50%;}
 
 	.big-left-bg-2.color-1 ul.info,ul.info.alt {width:auto;}
+	.faqContainer {max-width:96%}
 }
 
 /* 
@@ -243,6 +245,7 @@
 .half_left_layout {width:100%; height:450px;}
 .half-layout-container {padding-left:15px; padding-right:15px; float:none; width:auto; padding-top:450px; margin:0;}
 .big-left-bg-2 .container {margin-left:auto; margin-right:auto; padding-left:15px; padding-right:15px;}
+.faqContainer {max-width:96%}
 }
 
 /* 
@@ -298,4 +301,6 @@
 
 	.term_text .term_title {margin-top:15px;margin-left:5%;margin-right:5%;font-family:"Microsoft YaHei";font-size:18px;color:rgb(156, 12, 73);}
     .term_text .term_content {margin-top:5px;margin-left:5%;margin-right:5%;text-indent:2em;font-family:华文仿宋;font-size:15px;line-height:1.5; color:black}
+ 
+    .faqContainer {max-width:96%}
 }
