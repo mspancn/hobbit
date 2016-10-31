@@ -39,8 +39,6 @@
     .term_text .term_content {margin-top:5px;margin-left:13%;margin-right:13%;text-indent:2em;font-family:华文仿宋;font-size:18px;line-height:1.5; color:black}
     .faqContainer {max-width:80%}
     #applyToTeach {visibility: hidden;}
-    #frontVideo1-pic {display:none}
-    /*#frontVideo2-pic {display:none}*/
 }
 /* 
 	- (min-width: 480px) and (max-width: 991px) -
@@ -199,10 +197,6 @@
 	.faqContainer {max-width:96%}
 
 	#applyToTeach {visibility: visible;}
-	#frontVideo1-pic {visibility: visible; display: block}
-	#frontVideo1 {display:none}
-	/*#frontVideo2-pic {visibility: visible; display: block}*/
-	#frontVideo2 {display:none}
 }
 
 /* 
